@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixed</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1 class="font-bold text-4xl md:text-6xl text-center uppercase">Mixed Showcase </h1>
+    </header>
+    <main>
+        <section class="text-center uppercase">
+            <h1 class="font-medium text-5xl my-5"> Counter</h1>
+
+            <div class="bg-slate-600 md:w-2/12 p-3  mx-auto m-5 rounded-2xl">
+                <h1 id="counter" class="text-7xl my-7 text-white">0</h1>
+            </div>
+            <div class="space-x-16">
+                <button class="btn rounded-2xl bg-yellow-500 text-white" id="plus"> +</button>
+                <button class="btn rounded-2xl bg-red-500 text-white" id="minus">-</button>
+            </div>
+
+        </section>
+        <section>
+            <div class="bg-slate-600 md:w-1/3 lg:w-1/4   mx-auto m-5 rounded-2xl grid items-center justify-center">
+                <textarea  id="reviewInput" cols="28" rows="8" placeholder="Review US" class="mt-5 ml-4"></textarea>
+                <div class="text-center text-white p-2" id="commentContainer">
+                    <p >Comment Here</p>
+                </div>
+                <button id="commentBtn" class="bg-slate-300 btn rounded-3xl mb-3">Submit</button>
+            </div>
+        </section>
+        <section>
+            <div class="grid items-center justify-center ">
+                <div class="card  md:w-96 bg-base-100 shadow-xl bg-slate-400 "> 
+                    <div class="card-body items-center text-center mt-2">
+                      <h2 class="card-title " >Quotes Generator</h2>
+                      <p id="quote" class="text-xl">"The purpose of our lives is to be happy"</p>
+                      <div class="card-actions mt-2 font-semibold text-xl">
+                       <h1 id="author">Dalai Lama</h1>
+                      </div>
+                      <div class="">
+                        <button class="btn btn-primary mt-3" id="generateBtn">Generate</button>
+                      </div>
+     
+                    </div>
+                  </div>
+                
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
